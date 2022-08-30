@@ -1,0 +1,104 @@
+@media (max-width: 1024px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 920px) {
+  /*** Mobile Menu ***/
+  .hero {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .logo {
+    z-index: 999;
+  }
+
+  .logo--light {
+    display: none;
+  }
+
+  .logo--dark {
+    display: block;
+  }
+
+  .nav-open .logo--light {
+    display: block;
+  }
+
+  .nav-open .logo--dark {
+    display: none;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #232340;
+    font-size: 3.2rem;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(100%);
+    translate: all 10s ease-in;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .toggle-icon[name="menu-outline"] {
+    display: block;
+    color: #232340;
+  }
+
+  .toggle-icon[name="close-outline"] {
+    display: none;
+    color: #232340;
+  }
+
+  .nav-open .toggle-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .toggle-icon[name="close-outline"] {
+    display: block;
+    color: #fff;
+  }
+
+  .main-nav__list {
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .main-nav__link:link,
+  .main-nav__link:visited {
+    color: #595976;
+  }
+
+  .main-nav__link:hover,
+  .main-nav__link:active {
+    color: #fff;
+  }
+
+  .main-nav__link--active:link,
+  .main-nav__link--active:visited {
+    color: #fff;
+  }
+
+  .cta {
+    display: none;
+  }
+
+  .toggle-btn {
+    display: block;
+    z-index: 999;
+  }
+}

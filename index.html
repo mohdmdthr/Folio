@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Folio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <header class="header">
+        <img src="./img/dark-mode.png" alt="Logo" class="logo logo--dark" />
+        <img src="./img/light-mode.png" alt="Logo" class="logo logo--light" />
+
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link main-nav__link--active"
+                >About</a
+              >
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Work</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Services</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Jobs</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#" class="cta">Contact us</a>
+
+        <button class="toggle-btn">
+          <ion-icon class="toggle-icon" name="menu-outline"></ion-icon>
+          <ion-icon class="toggle-icon" name="close-outline"></ion-icon>
+        </button>
+      </header>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
