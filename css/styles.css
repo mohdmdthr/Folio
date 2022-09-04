@@ -18,6 +18,8 @@ body {
 /*** HEADER ***/
 
 .hero-wrapper {
+  position: relative;
+  overflow: hidden;
   padding: 2.4rem clamp(1rem, 4vw, 4.8rem);
 }
 
