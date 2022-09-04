@@ -1,0 +1,4 @@
+.wrapper {
+  max-width: 144rem;
+  padding: 8rem clamp(1rem, 4vw, 14rem);
+}

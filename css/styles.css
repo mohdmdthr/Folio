@@ -11,10 +11,14 @@ html {
   font-family: "Open Sans";
 }
 
+body {
+  overflow: hidden;
+}
+
 /*** HEADER ***/
 
-.hero {
-  padding: 4.8rem clamp(1rem, 4vw, 4.8rem);
+.hero-wrapper {
+  padding: 2.4rem clamp(1rem, 4vw, 4.8rem);
 }
 
 .header {
@@ -82,4 +86,64 @@ html {
   height: 6.4rem;
   color: #fff;
   cursor: pointer;
+}
+
+/**** HERO ****/
+.hero {
+  display: flex;
+}
+
+/* Top-Left */
+
+.top-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.heading-primary {
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: #232340;
+  width: 9ch;
+  line-height: 1;
+}
+
+.desc {
+  font-size: 1.8rem;
+  color: #606060;
+  max-width: 40ch;
+}
+
+.btn {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #5468e7;
+  padding: 2rem 4rem;
+  text-decoration: none;
+  align-self: flex-start;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Bottom-Right */
+
+.bottom-right {
+  position: relative;
+  width: 100%;
+}
+
+.hero__img {
+  height: 100%;
+  width: 100%;
+}
+
+.line-img {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  /* transform: translateX(-50%); */
+  height: 50rem;
+  z-index: -1;
 }

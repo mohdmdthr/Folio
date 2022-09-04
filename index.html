@@ -11,15 +11,19 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/utils.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/queries.css" />
   </head>
   <body>
-    <div class="hero">
+    <div class="hero-wrapper">
+      <img src="./img/Path.svg" alt="" class="line-img" />
       <header class="header">
+        <!-- Logo -->
         <img src="./img/dark-mode.png" alt="Logo" class="logo logo--dark" />
         <img src="./img/light-mode.png" alt="Logo" class="logo logo--light" />
 
+        <!-- Main Navigation -->
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -46,6 +50,21 @@
           <ion-icon class="toggle-icon" name="close-outline"></ion-icon>
         </button>
       </header>
+
+      <!-- Hero Section -->
+      <section class="hero wrapper">
+        <div class="top-left">
+          <h1 class="heading-primary">Stand Out from The Crowd.</h1>
+          <p class="desc">
+            Agency is a full-service agency, busy designing and building
+            beautiful digital products, brands, and experiences.
+          </p>
+          <a href="#" class="btn">Recent Work</a>
+        </div>
+        <div class="bottom-right">
+          <img src="./img/hero-img.png" alt="Hero image" class="hero__img" />
+        </div>
+      </section>
     </div>
     <script
       type="module"
