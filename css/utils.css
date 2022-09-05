@@ -1,4 +1,21 @@
-.wrapper {
+.container {
   max-width: 144rem;
-  padding: 8rem clamp(1rem, 4vw, 14rem);
+  padding: 4rem clamp(1rem, 8vw, 14rem);
+  margin: 0 auto;
+}
+
+.heading-secondary {
+  display: flex;
+  gap: 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.heading-secondary span {
+  color: #8b8b8b;
+}
+
+.heading-4 {
+  font-size: 2.4rem;
+  max-width: 32ch;
 }

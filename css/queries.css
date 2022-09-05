@@ -96,17 +96,8 @@
   }
 }
 
-@media (max-width: 786px) {
-  html {
-    font-size: 50%;
-  }
-
-  .line-img {
-    /* left: 0%; */
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 820px) {
+  /* HERO SECTION */
   .hero {
     flex-direction: column;
   }
@@ -132,5 +123,75 @@
 
   .btn {
     padding: 1.5rem 3rem;
+  }
+
+  /* SECTION WHO */
+  .container-who {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .section-who__tertiary {
+    max-width: 12ch;
+    font-size: 6.4rem;
+    grid-row: 2;
+    grid-column: span 2;
+  }
+
+  .btn-move {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .arrows {
+    grid-row: 3;
+    justify-self: start;
+  }
+
+  .arrow {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .timeline {
+    display: none;
+  }
+
+  .section-who__img {
+    grid-row: 4;
+    grid-column: span 2;
+    justify-self: center;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .card {
+    grid-row: 6;
+    grid-column: 1 / -1;
+    gap: 3rem;
+  }
+
+  .heading-4 {
+    font-size: 4rem;
+    max-width: 24ch;
+  }
+
+  .card .desc {
+    font-size: 3rem;
+  }
+
+  .card .btn {
+    font-size: 3rem;
+  }
+
+  .counter {
+    grid-row: 7;
+    grid-column: 1 / -1;
   }
 }
