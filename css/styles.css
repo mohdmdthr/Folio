@@ -250,7 +250,7 @@ body {
 
 /* SECTION WHAT WE DO */
 .section-what {
-  background: linear-gradient(#fff, #ede5f0);
+  background: linear-gradient(to left, #fff, #ede5f0);
 }
 
 .what-grid {
@@ -320,4 +320,47 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
   color: inherit;
+}
+
+/*** ACHIEVEMENT ***/
+.section-achievment {
+  background: linear-gradient(to left, #fff, #ede5f0);
+}
+
+.container-achievment {
+  display: flex;
+  align-items: center;
+}
+
+.img-bg {
+  max-width: 45rem;
+}
+
+.img-bg .img {
+  max-width: 75%;
+}
+
+.achievement {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  column-gap: 7.5rem;
+}
+
+.achievement .heading-secondary {
+}
+
+.achievement .section-who__tertiary {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  margin-top: 4rem;
+}
+
+.achievement .counter {
+  grid-column: 1 / -1;
+  margin-top: 8rem;
+  align-items: flex-start;
+}
+
+.achievement .counter span {
+  color: #5468e7;
 }

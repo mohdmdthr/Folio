@@ -150,6 +150,15 @@
   }
 }
 
+@media (max-width: 845px) {
+  /* SECTION Achievement */
+  .container-achievment {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 4rem;
+  }
+}
+
 @media (max-width: 600px) {
   /* HERO SECTION */
   .hero {
@@ -256,5 +265,10 @@
   .feature--highlighted {
     background-color: #5468e7;
     color: #fff;
+  }
+
+  /* SECTION ACHIEVEMENT */
+  .achievement .heading-secondary {
+    grid-column: 1 / -1;
   }
 }
